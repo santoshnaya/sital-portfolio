@@ -54,7 +54,7 @@ const About = () => {
         <div className="grid lg:grid-cols-2 gap-16 lg:gap-20 items-center max-w-6xl mx-auto">
           <div ref={imageRef} className="order-2 lg:order-1 flex justify-center">
             <div className="relative group">
-              <div className="w-80 h-96 md:w-96 md:h-[28rem] rounded-3xl overflow-hidden glass-effect p-4 group-hover:scale-105 transition-all duration-500">
+              <div className="w-80 h-96 md:w-96 md:h-[28rem] rounded-3xl overflow-hidden glass-effect p-4 group-hover:scale-105 transition-all duration-500" data-cursor-image>
                 <div className="w-full h-full rounded-2xl overflow-hidden relative">
                   <Image
                     src="/pic2.jpg"
@@ -62,6 +62,7 @@ const About = () => {
                     width={400}
                     height={500}
                     className="w-full h-full object-cover object-center"
+                    data-cursor-image
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-pink-200/30 via-transparent to-purple-200/20"></div>
                 </div>

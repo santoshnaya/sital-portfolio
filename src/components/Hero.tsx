@@ -128,11 +128,11 @@ const Hero = () => {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <button className="btn-primary group flex items-center justify-center">
+              <button className="btn-primary group flex items-center justify-center" data-cursor-interactive>
                 <Heart size={20} className="mr-2 group-hover:text-pink-100" />
                 <span>Let&apos;s Connect</span>
               </button>
-              <button className="btn-secondary flex items-center justify-center">
+              <button className="btn-secondary flex items-center justify-center" data-cursor-interactive>
                 <Sparkles size={20} className="mr-2" />
                 <span>View My Work</span>
               </button>
@@ -142,7 +142,7 @@ const Hero = () => {
           <div className="order-1 lg:order-2 flex justify-center lg:justify-end mb-8 lg:mb-0">
             <div ref={imageRef} className="relative group">
               {/* Main Image Container */}
-              <div className="w-72 h-90 sm:w-80 sm:h-96 md:w-96 md:h-[40rem] lg:w-[24rem] lg:h-[40rem] rounded-3xl overflow-hidden bg-white/80 p-3 shadow-2xl group-hover:scale-105 transition-all duration-500 border border-white/50">
+              <div className="w-72 h-90 sm:w-80 sm:h-96 md:w-96 md:h-[40rem] lg:w-[24rem] lg:h-[40rem] rounded-3xl overflow-hidden bg-white/80 p-3 shadow-2xl group-hover:scale-105 transition-all duration-500 border border-white/50" data-cursor-image>
                 <div className="w-full h-full rounded-2xl overflow-hidden relative">
                   <Image
                     src="/pic1.jpg"
@@ -151,6 +151,7 @@ const Hero = () => {
                     height={600}
                     className="w-full h-full object-cover object-center"
                     priority
+                    data-cursor-image
                   />
                 </div>
               </div>

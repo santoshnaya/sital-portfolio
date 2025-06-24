@@ -20,6 +20,18 @@
 
 html {
   scroll-behavior: smooth;
+  cursor: none; /* Hide default cursor on desktop */
+}
+
+/* Show default cursor on mobile devices */
+@media (hover: none) and (pointer: coarse) {
+  html {
+    cursor: auto;
+  }
+  
+  .custom-cursor {
+    display: none !important;
+  }
 }
 
 .gradient-bg {
